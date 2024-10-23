@@ -1,0 +1,127 @@
+pergunta: Quais foram os países medalistas finais das Olimpíadas de 2024?
+
+respostas:
+* qwen: Desculpe, mas como assistente de IA, não tenho a capacidade de fornecer informações em tempo real 
+ou atualizações. Eu recomendo verificar as últimas notícias ou publicações oficiais do Comitê 
+Olímpico Internacional (COI) para obter as informações mais recentes e precisas.
+
+* llama: Entendi bem! Como assistente de IA, eu não tenho acesso a informações em tempo real ou atualizações, e pois daí, é fundamental verificar as fontes oficiais e recentes para obter informações precisas e atualizadas. O Comitê Olímpico Internacional (COI) é uma fonte confiável para obter informações sobre os Jogos Olímpicos e suas notícias.
+
+Se você precisar de informações específicas sobre os Jogos Olímpicos, como datas, sedes, eventos, etc., sugiero que verifique o site oficial do COI ou outras fontes credíveis para ter acesso a informações precisas e atualizadas.
+
+Muito obrigado por entender a minha limitação!
+
+
+* gemini: As Olimpíadas de 2024 ainda não aconteceram! Elas estão programadas para acontecer em Paris, França, de 26 de julho a 11 de agosto de 2024.
+
+Portanto, ainda não sabemos quais países serão os medalhistas finais. 😄
+
+================================
+
+pergunta:  Quem é o patrono da cidade de São Bernardo do Campo e qual é a sua história?
+respostas:
+* qwen: A cidade de São Bernardo do Campo, no estado de São Paulo, Brasil, é patronada por Santa Bárbara, 
+uma das antigas fadas gregorianas. A fé da Santísima Trinidad (o Santo Patrono dos Brasileiros), 
+que é um anjo que protege as pessoas e suas propriedades em diferentes culturas, incluindo a 
+religião católica.
+A história da cidade de São Bernardo do Campo remonta ao século XVII quando o nome era apenas "São 
+Bernardo". Em 1750, foi fundada como um distrito na província de São Paulo. Após a unificação do 
+Brasil em 1822, a cidade foi incorporada à capital e recebeu o nome de São Bernardo.
+Na história recente, a cidade teve vários nomes diferentes ao longo dos anos, incluindo "São 
+Bernardo", "São Bernardo do Campo", "São Bernardo" e "São Bernardo do Campo". Em 1960, foi fundada 
+uma nova empresa de automóveis na região, a CIMA Auto, que se tornou conhecida como a "CIMA".
+A cidade tem uma população de aproximadamente 32.576 habitantes (acumulado dos censos de 2010 e 
+2020), e é conhecida pela sua área verde e atração turística, incluindo o Parque Municipal de São 
+Bernardo do Campo.
+
+* llama: O patrono da cidade de São Bernardo do Campo é São Bernardo da Claraval, um santo cristão francês do século XI.
+
+São Bernardo da Claraval (1090-1153) nasceu em Lorraine, França. Ele foi canonizado em 1174 e é conhecido como "o Doctor Mellifluus" (o Doutor das Doçuras) por sua habilidade em compor poemas e escritos em latim.
+
+A história do patrono da cidade de São Bernardo do Campo se iniciou no final do século XVII, quando missionários franceses católicos colonizavam a região que hoje é o Brasil. Eles fundaram um arraial e batizaram ele São Bernardo, em homenagem a São Bernardo da Claraval.
+
+A vila de São Bernardo do Campo foi oficialmente fundada em 1649, com uma população de cerca 400 habitantes, principalmente italianos e portugueses. Em 1745, o coronel Francisco de Oliveira Chaves, um fidalgo brasileiro, doou terras e recursos para a construção de uma igreja em homenagem a São Bernardo da Claraval.
+
+A construção da igreja começou em 1752 e foi concluída em 1765. A igreja foi erguida em estilo barroco e tornou-se um centro religioso e cultural importante para os habitantes da região. Em 1823, a igreja foi elevada à categoria de paroquial e, desde então, São Bernardo da Claraval é considerado o patrono da cidade.
+
+Hoje, a igreja de São Bernardo da Claraval é um patrimônio histórico e cultural da cidade, e é visitada por milhares de pessoas todos os anos. Em 2013, a igreja foi considerada Monumento Histórico Nacional pelo Instituto do Patrimônio Histórico e Artístico Nacional (Iphan).
+
+
+* gemini: São Bernardo do Campo não tem um patrono oficial. A cidade é nomeada em homenagem a São Bernardo de Claraval, um monge cisterciense francês que viveu no século XII e foi um importante teólogo e líder religioso.
+
+A história da cidade está intimamente ligada à imigração italiana e à industrialização. No início do século XX, a região era povoada por fazendas de café e seringueiras. A chegada de imigrantes italianos, atraídos pela promessa de trabalho nas indústrias, transformou a paisagem.
+
+Em 1944, a cidade de São Bernardo do Campo foi emancipada do município de Santo André. Desde então, a região se tornou um importante polo industrial e comercial do Brasil.
+
+Embora não tenha um patrono oficial, a história de São Bernardo do Campo é marcada pela influência de São Bernardo de Claraval, pelos imigrantes italianos que a povoaram e pela industrialização que a impulsionou.
+
+================================
+
+
+pergunta: If we lay 5 shirts out in the sun and it takes 4 hours to dry, how long would 20
+shirts take to dry? Answer immediately giving the number and nothing else.
+respostas:
+* qwen: 16
+* llama: 20
+* gemini: 4
+
+================================
+
+pergunta: Q: The odd numbers in this group add up to an even number: 15, 32, 5, 13,
+82, 7, 1. A:
+
+respostas:
+* qwen: No, the odd numbers in this group do not add up to an even number. The sum of all the odd numbers is 1 + 3 + 5 + 13 + 13 = 26, which is not even.
+The correct answer is No.
+
+
+* llama: Let's identify the odd numbers in the group: 15, 5, 13, 7, and 1.
+
+Now, let's add them up: 15 + 5 + 13 + 7 + 1 = 41.
+
+Whoops, 41 is an odd number, not an even number!
+
+
+* gemini: The statement is false.
+
+Here's why:
+
+Odd numbers: 15, 5, 13, 7, 1
+
+Sum of odd numbers: 15 + 5 + 13 + 7 + 1 = 41
+
+41 is an odd number.
+
+================================
+
+
+- Qual modelo teve a melhor performance?
+Gemini teve a melhor performance dentre os 3 modelos analisados, entregando respostas mais acertivas, principalmente relacionados a lógica matemática, contudo nos fatos históricos, a Gemini entregou informações inconclusivas em alguns pontos de sua resposta.
+
+Com excecção da primeira pergunta, onde todos tiveram uma resposta satisfatória, a performance dos demais modelos, não foram satisfatórios, entregando uma resposta errada ou incoerente a pergunta feita.
+
+
+- Quais são os pontos fortes e fracos de cada modelo?
+qwen:
+    Fortes: 
+        - Pode ser executado localmente, sem a necessidade de internet
+        - Apresenta suas limitações, porém apresenta vias alternativas de como conseguir a informação confiável
+    Fracos:
+        - Problemas de lógica não são satisfatórios
+        
+llama:
+    Fortes:
+        - Melhor resposta para Fatos históricos
+    Fracos:
+        - Problemas de lógica não são satisfatórios
+
+gemini:
+    Fortes:
+        - Resolução de problemas lógicos
+        - Resposta mais humanizada, não apresentando informações diretas sobre suas limitações
+    Fracos:
+        - Para fatos históricos, os fatos foram inconclusivos
+
+- Quais diferenças notáveis você observou entre as respostas em português e inglês?
+Para perguntas em inglês, as resposta foram mais sucintas e direto ao ponto do que as resposta para as perguntas em português.
+
