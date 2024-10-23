@@ -1,0 +1,12 @@
+* Prova (educação) - um exame avaliativo
+* Teste de inteligência
+* Teste de Kjeldahl
+* Teste de Rorschach
+* Teste projetivo
+* Testes com animais
+* Teste de Fidelidade
+
+Ou ainda:
+* Teste de software
+* Teste unitário
+* Teste de carga
