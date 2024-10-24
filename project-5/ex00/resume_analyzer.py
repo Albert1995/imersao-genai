@@ -2,32 +2,42 @@ import chromadb
 from chromadb.utils import embedding_functions
 import os
 import pdfplumber
+import glob
+import re
 
 def process_pdf_directory(pdf_directory, collection: chromadb.Collection):
-    for path, _, files in os.walk(pdf_directory):
-        for name in files:
-            filename = f"{path}/{name}"
-            if not name.endswith(".pdf"): continue
+    pdf_files = glob.glob(os.path.join(pdf_directory, "**", "*.pdf"), recursive=True)
+    print(f"Encontrados {len(pdf_files)} arquivos PDF no diretório.")
 
-            r = collection.get(
-                ids=[name],
-                where={"document": name},
-            )
+    for i, name in enumerate(pdf_files):
+        filename = f"{name}"
+        if not name.endswith(".pdf"): continue
 
-            if len(r['ids']) > 0:
-                continue
+        r = collection.get(
+            ids=[name],
+            where={"source": name},
+        )
+        
+        print(f"Processando PDF {i + 1}/{len(pdf_files)}: {name}")
 
-            print(f"Extracting {path}/{name}")
+        if len(r['ids']) > 0:
+            continue
+        
+        print(f"Extracting {name}")
 
-            pdftext = ""
-            with pdfplumber.open(filename) as f:
-                for page in f.pages:
-                    pdftext += page.extract_text()
-            collection.add(
-                ids=[name],
-                metadatas=[{"document": name, "path": path}],
-                documents=[pdftext]
-            )
+        pdftext = ""
+        with pdfplumber.open(filename) as f:
+            for page in f.pages:
+                pdftext += page.extract_text()
+
+        # pdftext = pdftext.replace(r"Página \d de \d", "")
+        pdftext = re.sub(r"Página \d de \d\n", "", pdftext)
+
+        collection.add(
+            ids=[name],
+            metadatas=[{"source": name}],
+            documents=[pdftext]
+        )
 
 
 def interactive_query_loop(collection: chromadb.Collection):
@@ -37,10 +47,12 @@ def interactive_query_loop(collection: chromadb.Collection):
             break
         results = collection.query(
             query_texts=[query],
-            n_results=3
+            n_results=3,
+            include=['documents', 'metadatas']
         )
+        
         print("\nResultados:")
-        for document, metadata in ...:
+        for document, metadata in zip(results['documents'][0], results['metadatas'][0]):
             print(f"Documento: {metadata['source']}")
             print(f"Trecho: {document[:200]}...") # Apenas os 200 primeiros caracteres
             print()
