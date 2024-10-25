@@ -10,14 +10,41 @@ from dotenv import load_dotenv
 load_dotenv()
 
 collection: chromadb.Collection = None
-
+# Resumo Analisador de Currículos - Módulo de Conexão com Chroma API
 def open_chroma():
+    """
+    Abre o conector com a API Chroma para criação e gerência de coleções.
+
+    O método estabelece uma conexão com a API de Chroma, especificamente para as coleções de curriculos, 
+    e configura os parâmetros necessários para o processo.
+
+    Args:
+        chromadb.PersistentClient.path (str): Caminho para o diretório de persistência dos dados.
+            Defaults to "./chroma_data".
+        embedding_functions.DefaultEmbeddingFunction (obj): Função de embedding para a embeddção dos dados.
+            Reutiliza a implementação padrão.
+
+    Returns:
+        None
+    """
+    # Global variável para armazenar o objeto da coleção
     global collection
-    persist_directory = "./chroma_data"
-    chroma_client = chromadb.PersistentClient(path=persist_directory)
-    embedding_function = embedding_functions.DefaultEmbeddingFunction()
-    collection_name = 'curriculos'
-    collection = chroma_client.get_or_create_collection(collection_name, embedding_function=embedding_function)
+
+    # Diretório de persistência dos dados
+    persist_directory: str = "./chroma_data"
+
+    # Conector com a API de Chroma
+    chroma_client: chromadb.PersistentClient = chromadb.PersistentClient(path=persist_directory)
+
+    # Função de embeddement para a coleção
+    embedding_function: embedding_functions.DefaultEmbeddingFunction = embedding_functions.DefaultEmbeddingFunction()
+
+    # Nome da coleção
+    collection_name: str = 'curriculos'
+
+    # Cria ou recupera a coleção do Chroma
+    collection: chromadb.Collection = chroma_client.get_or_create_collection(collection_name, 
+                                                                            embedding_function=embedding_function)
 
 def process_pdf_file(pdf_file):
     global collection
