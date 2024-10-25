@@ -43,8 +43,7 @@ def open_chroma():
     collection_name: str = 'curriculos'
 
     # Cria ou recupera a coleção do Chroma
-    collection: chromadb.Collection = chroma_client.get_or_create_collection(collection_name, 
-                                                                            embedding_function=embedding_function)
+    collection = chroma_client.get_or_create_collection(collection_name, embedding_function=embedding_function)
 
 def process_pdf_file(pdf_file):
     global collection
